@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Layout, Home, APropos } from '@/pages'
+import { Layout, Home, APropos, Projets, Contact, NotFound } from '@/pages'
 
 function App() {
 
@@ -7,8 +7,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<Home />}/>
-          <Route path="/propos" element={<APropos />}/>
+          <Route index element={<Home />} />
+          <Route path="/propos" element={<APropos />} />
+          <Route path="/projets" element={<Projets />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
