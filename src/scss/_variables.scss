@@ -1,0 +1,38 @@
+// 1. Palette brute — jamais utilisée directement dans les composants
+$indigo: #2B3A55;
+$vermillon: #C8442F;
+$vermillon-clair: #E0553A;
+$creme: #FAF7F2;
+$encre: #14171C;
+$gris-clair: #5B6472;
+$gris-sombre: #9AA3AF;
+$bordure-claire: #E7E1D6;
+$bordure-sombre: #262B33;
+
+// 2. Couleurs sémantiques — celles qu'on utilise partout dans le code
+:root {
+  --couleur-fond: #{$creme};
+  --couleur-texte: #{$encre};
+  --couleur-texte-secondaire: #{$gris-clair};
+  --couleur-signature: #{$indigo};
+  --couleur-accent: #{$vermillon};
+  --couleur-bordure: #{$bordure-claire};
+  --couleur-surface: #ffffff; // fond des cartes
+}
+
+[data-theme="dark"] {
+  --couleur-fond: #{$encre};
+  --couleur-texte: #{$creme};
+  --couleur-texte-secondaire: #{$gris-sombre};
+  --couleur-signature: #B9C4DA;
+  --couleur-accent: #{$vermillon-clair};
+  --couleur-bordure: #{$bordure-sombre};
+  --couleur-surface: #1B1F26;
+}
+
+body {
+  margin: 0;
+  background: var(--couleur-fond);
+  color: var(--couleur-texte);
+  font-family: 'Inter', system-ui, sans-serif;
+}
