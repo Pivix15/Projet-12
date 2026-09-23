@@ -29,10 +29,3 @@ $bordure-sombre: #262B33;
   --couleur-bordure: #{$bordure-sombre};
   --couleur-surface: #1B1F26;
 }
-
-body {
-  margin: 0;
-  background: var(--couleur-fond);
-  color: var(--couleur-texte);
-  font-family: 'Inter', system-ui, sans-serif;
-}
