@@ -10,12 +10,20 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@600;800&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>porfoflio</title>
+  <title>portfolio</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nom" />
+    <input type="email" name="email" />
+    <input type="text" name="sujet" />
+    <textarea name="message"></textarea>
+    <input type="text" name="bot-field" />
+  </form>
 </body>
 
 </html>
