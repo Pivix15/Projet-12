@@ -18,11 +18,20 @@
   <script type="module" src="/src/main.jsx"></script>
 
   <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="text" name="nom" />
-    <input type="email" name="email" />
-    <input type="text" name="sujet" />
-    <textarea name="message"></textarea>
-    <input type="text" name="bot-field" />
+    <label for="hidden-nom">Nom</label>
+    <input type="text" id="hidden-nom" name="nom" />
+
+    <label for="hidden-email">Email</label>
+    <input type="email" id="hidden-email" name="email" />
+
+    <label for="hidden-sujet">Sujet</label>
+    <input type="text" id="hidden-sujet" name="sujet" />
+
+    <label for="hidden-message">Message</label>
+    <textarea id="hidden-message" name="message"></textarea>
+
+    <label for="hidden-bot">Ne pas remplir</label>
+    <input type="text" id="hidden-bot" name="bot-field" />
   </form>
 </body>
 

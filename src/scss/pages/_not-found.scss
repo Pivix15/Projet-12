@@ -1,0 +1,58 @@
+.not-found {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    text-align: center;
+    min-height: 70vh;
+
+    &__illustration {
+        opacity: 0.5;
+    }
+
+    &__code {
+        margin: 0;
+        font-family: 'Shippori Mincho', serif;
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 1;
+        color: var(--couleur-accent);
+    }
+
+    &__texte {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            margin: 0;
+            font-family: 'Shippori Mincho', serif;
+            font-weight: 800;
+            font-size: 28px;
+            color: var(--couleur-texte);
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: var(--couleur-texte-secondaire);
+            max-width: 440px;
+        }
+    }
+
+    .btn {
+        margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+        &__code {
+            font-size: 64px;
+        }
+
+        &__texte h1 {
+            font-size: 22px;
+        }
+    }
+}
