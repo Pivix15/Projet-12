@@ -5,17 +5,25 @@
     justify-content: space-between;
     padding: 24px 72px;
     border-top: 1px solid var(--couleur-bordure);
-}
 
-.footer__copy {
-    margin: 0;
-    font-size: 13px;
-    color: var(--couleur-texte-tertiaire);
-}
+    @media (max-width: 768px) {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
 
-.footer__socials {
-    display: flex;
-    gap: 18px;
+    &__copy {
+        margin: 0;
+        font-size: 13px;
+        color: var(--couleur-texte-tertiaire);
+    }
+
+    &__socials {
+        display: flex;
+        gap: 18px;
+    }
 }
 
 .icon-btn {

@@ -43,7 +43,7 @@ const APropos = () => {
                     </div>
                 </div>
                 <div className="apropos__photo">
-                    <img src={profile} alt="Logo du site" aria-hidden="true" />
+                    <img src={profile} alt="Photo de profil de Stevy Nguyen"/>
                 </div>
             </div>
 
