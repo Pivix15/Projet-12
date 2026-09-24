@@ -1,0 +1,50 @@
+[
+    {
+        "id": "kasa",
+        "titre": "Kasa",
+        "description": "Un site de location immobilière type Airbnb, pensé pour la navigation entre logements.",
+        "tags": ["React"],
+        "image": "/src/assets/projets/Kasa_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-7"
+    },
+    {
+        "id": "724-events",
+        "titre": "724 Events",
+        "description": "Traque et correction de bugs sur un site d'agence événementielle, testée de bout en bout.",
+        "tags": ["React", "Tests"],
+        "image": "/src/assets/projets/724_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-9"
+    },
+    {
+        "id": "sophie-bluel",
+        "titre": "Portfolio Sophie Bluel",
+        "description": "Un portfolio dynamique connecté à sa propre API pour ajouter et filtrer des projets.",
+        "tags": ["JavaScript", "Node.js"],
+        "image": "/src/assets/projets/SophieBluel_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-6"
+    },
+    {
+        "id": "nina-carducci",
+        "titre": "Nina Carducci — Photographe",
+        "description": "Un site vitrine repensé pour être mieux référencé, plus accessible et plus rapide.",
+        "tags": ["SEO", "Accessibilité"],
+        "image": "/src/assets/projets/NinaCarducci_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-8"
+    },
+    {
+        "id": "argent-bank",
+        "titre": "Argent Bank",
+        "description": "Une application bancaire complète, de l'authentification au tableau de bord utilisateur.",
+        "tags": ["React", "Redux"],
+        "image": "/src/assets/projets/ArgentBank_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-10"
+    },
+    {
+        "id": "ohmyfood",
+        "titre": "OhMyfood",
+        "description": "Un site de commande en ligne pour une société de restauration, pensé mobile-first.",
+        "tags": ["HTML/CSS"],
+        "image": "/src/assets/projets/Ohmyfood_desktop.webp",
+        "lien": "https://github.com/Pivix15/Projet-4"
+    }
+]
