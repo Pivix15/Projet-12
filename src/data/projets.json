@@ -4,7 +4,7 @@
         "titre": "Kasa",
         "description": "Un site de location immobilière type Airbnb, pensé pour la navigation entre logements.",
         "tags": ["React"],
-        "image": "/public/images/projets/Kasa_desktop.webp",
+        "image": "/images/projets/Kasa_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-7",
         "siteUrl": "#",
         "detail": {
@@ -21,7 +21,7 @@
         "titre": "724 Events",
         "description": "Traque et correction de bugs sur un site d'agence événementielle, testée de bout en bout.",
         "tags": ["React", "Tests"],
-        "image": "/public/images/projets/724_desktop.webp",
+        "image": "/images/projets/724_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-9",
         "siteUrl": "#",
         "detail": {
@@ -38,7 +38,7 @@
         "titre": "Portfolio Sophie Bluel",
         "description": "Un portfolio dynamique connecté à sa propre API pour ajouter et filtrer des projets.",
         "tags": ["JavaScript", "Node.js"],
-        "image": "/public/images/projets/SophieBluel_desktop.webp",
+        "image": "/images/projets/SophieBluel_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-6",
         "siteUrl": "#",
         "detail": {
@@ -55,7 +55,7 @@
         "titre": "Nina Carducci - Photographe",
         "description": "Un site vitrine repensé pour être mieux référencé, plus accessible et plus rapide.",
         "tags": ["SEO", "Accessibilité"],
-        "image": "/public/images/projets/NinaCarducci_desktop.webp",
+        "image": "/images/projets/NinaCarducci_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-8",
         "siteUrl": "#",
         "detail": {
@@ -72,7 +72,7 @@
         "titre": "Argent Bank",
         "description": "Une application bancaire complète, de l'authentification au tableau de bord utilisateur.",
         "tags": ["React", "Redux"],
-        "image": "/public/images/projets/ArgentBank_desktop.webp",
+        "image": "/images/projets/ArgentBank_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-10",
         "siteUrl": "#",
         "detail": {
@@ -89,7 +89,7 @@
         "titre": "OhMyfood",
         "description": "Un site de commande en ligne pour une société de restauration, pensé mobile-first.",
         "tags": ["HTML/CSS"],
-        "image": "/public/images/projets/Ohmyfood_desktop.webp",
+        "image": "/images/projets/Ohmyfood_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-4",
         "siteUrl": "#",
         "detail": {
