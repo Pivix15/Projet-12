@@ -1,0 +1,137 @@
+.projet-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px 0 64px;
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__titre {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            margin: 0;
+            font-family: 'Shippori Mincho', serif;
+            font-weight: 800;
+            font-size: 38px;
+            color: var(--couleur-texte);
+        }
+    }
+
+    &__tags {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    &__visuel {
+        border-radius: 16px;
+        border: 1px solid var(--couleur-bordure);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__contenu {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+
+        @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__texte {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--couleur-texte);
+        }
+
+        p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--couleur-texte-secondaire);
+        }
+    }
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--couleur-texte-secondaire);
+    width: fit-content;
+
+    &:hover {
+        color: var(--couleur-accent);
+    }
+
+    &:focus-visible {
+        outline: 3px solid var(--couleur-accent);
+        outline-offset: 2px;
+        border-radius: 6px;
+    }
+}
+
+.info-card {
+    background: var(--couleur-surface);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--couleur-texte-tertiaire);
+}
+
+.info-value {
+    font-size: 14px;
+    color: var(--couleur-texte);
+}

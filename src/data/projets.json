@@ -5,7 +5,16 @@
         "description": "Un site de location immobilière type Airbnb, pensé pour la navigation entre logements.",
         "tags": ["React"],
         "image": "/src/assets/projets/Kasa_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-7"
+        "lien": "https://github.com/Pivix15/Projet-7",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "Kasa est un site de location de logements de vacances, inspiré d'Airbnb, à réaliser à partir de maquettes Figma fournies. L'objectif était de transformer ces maquettes en une application React fonctionnelle et responsive.",
+            "ceQueJaiFait": "Mise en place du routage entre la page d'accueil, le catalogue de logements et les fiches détaillées avec React Router, gestion des données de logements, création de composants réutilisables (galerie photo, accordéons de description, notation par étoiles).",
+            "ceQueJaiAppris": "Découper une maquette en composants React logiques et réutilisables, gérer des routes dynamiques avec des paramètres d'URL, et structurer un projet Sass en respectant une architecture claire.",
+            "role": "Développeur front-end",
+            "stack": "React, React Router, Sass",
+            "formation": "OpenClassrooms - Projet 7"
+        }
     },
     {
         "id": "724-events",
@@ -13,7 +22,16 @@
         "description": "Traque et correction de bugs sur un site d'agence événementielle, testée de bout en bout.",
         "tags": ["React", "Tests"],
         "image": "/src/assets/projets/724_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-9"
+        "lien": "https://github.com/Pivix15/Projet-9",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "724 Events est le site vitrine d'une agence événementielle développé en React. La mission consistait à identifier et corriger des bugs remontés par les utilisateurs, puis à sécuriser le code avec des tests.",
+            "ceQueJaiFait": "Diagnostic et correction de 9 bugs documentés (affichage des événements, formulaire de contact, filtres), rédaction de tests unitaires et d'intégration avec Jest et React Testing Library pour éviter les régressions.",
+            "ceQueJaiAppris": "Une méthodologie de débogage structurée (React DevTools, reproduction du bug, correction, vérification), et la différence entre tests unitaires et tests d'intégration en React.",
+            "role": "Développeur front-end / QA",
+            "stack": "React, Jest, React Testing Library",
+            "forxmation": "OpenClassrooms - Projet 9"
+        }
     },
     {
         "id": "sophie-bluel",
@@ -21,15 +39,33 @@
         "description": "Un portfolio dynamique connecté à sa propre API pour ajouter et filtrer des projets.",
         "tags": ["JavaScript", "Node.js"],
         "image": "/src/assets/projets/SophieBluel_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-6"
+        "lien": "https://github.com/Pivix15/Projet-6",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "Portfolio pour une architecte d'intérieur fictive, à rendre dynamique en le connectant à une API Node.js/Express fournie par OpenClassrooms, avec une base de données de projets à afficher et filtrer.",
+            "ceQueJaiFait": "Récupération des projets via l'API en JavaScript vanilla (fetch), affichage dynamique de la galerie, filtres par catégorie, et implémentation du mode édition (connexion, ajout et suppression de projets).",
+            "ceQueJaiAppris": "Manipuler le DOM en JavaScript pur sans framework, communiquer avec une API REST (authentification par token, requêtes POST/DELETE), et gérer l'état d'une interface (connecté / non connecté) sans state manager.",
+            "role": "Développeur front-end",
+            "stack": "JavaScript, Node.js, Express",
+            "formation": "OpenClassrooms - Projet 6"
+        }
     },
     {
         "id": "nina-carducci",
-        "titre": "Nina Carducci — Photographe",
+        "titre": "Nina Carducci - Photographe",
         "description": "Un site vitrine repensé pour être mieux référencé, plus accessible et plus rapide.",
         "tags": ["SEO", "Accessibilité"],
         "image": "/src/assets/projets/NinaCarducci_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-8"
+        "lien": "https://github.com/Pivix15/Projet-8",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "Site vitrine existant d'une photographe basée à Bordeaux, à optimiser pour le référencement naturel, l'accessibilité et la performance, sans en changer le contenu ni le design d'origine.",
+            "ceQueJaiFait": "Restructuration du HTML en balises sémantiques, optimisation des images (compression, formats adaptés, attributs alt), ajout de données structurées, et corrections d'accessibilité identifiées avec WAVE.",
+            "ceQueJaiAppris": "Le pipeline complet d'optimisation SEO (structure, images, métadonnées, données structurées Schema.org), et que les résultats SEO se mesurent sur plusieurs mois, pas immédiatement.",
+            "role": "Intégrateur web",
+            "stack": "HTML5, CSS3, Bootstrap, jQuery",
+            "formation": "OpenClassrooms - Projet 8"
+        }
     },
     {
         "id": "argent-bank",
@@ -37,7 +73,16 @@
         "description": "Une application bancaire complète, de l'authentification au tableau de bord utilisateur.",
         "tags": ["React", "Redux"],
         "image": "/src/assets/projets/ArgentBank_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-10"
+        "lien": "https://github.com/Pivix15/Projet-10",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "Argent Bank est une application bancaire fictive développée dans le cadre de ma formation. L'objectif était de connecter une interface React à une API REST existante pour gérer l'authentification et l'affichage des données utilisateur.",
+            "ceQueJaiFait": "Mise en place de l'authentification par token JWT, gestion de l'état global avec Redux Toolkit, formulaire de modification du profil utilisateur, et un tableau de bord affichant les comptes et transactions.",
+            "ceQueJaiAppris": "Structurer un store Redux Toolkit propre avec des slices, gérer la persistance d'un token en toute sécurité, et découper les composants pour qu'ils restent testables.",
+            "role": "Développeur front-end",
+            "stack": "React, Redux Toolkit, Sass",
+            "formation": "OpenClassrooms - Projet 10"
+        }
     },
     {
         "id": "ohmyfood",
@@ -45,6 +90,15 @@
         "description": "Un site de commande en ligne pour une société de restauration, pensé mobile-first.",
         "tags": ["HTML/CSS"],
         "image": "/src/assets/projets/Ohmyfood_desktop.webp",
-        "lien": "https://github.com/Pivix15/Projet-4"
+        "lien": "https://github.com/Pivix15/Projet-4",
+        "siteUrl": "#",
+        "detail": {
+            "contexte": "OhMyfood est un site permettant de réserver un menu dans différents restaurants, à intégrer à partir de maquettes desktop et mobile fournies, en respectant une approche mobile-first.",
+            "ceQueJaiFait": "Intégration HTML/SCSS des pages restaurant à partir des maquettes, animations CSS (chargement, ajout au menu), et gestion des différents points de rupture pour un rendu fidèle sur mobile et desktop.",
+            "ceQueJaiAppris": "L'approche mobile-first en CSS, l'organisation d'un projet Sass avec des partials, et la création d'animations CSS fluides (keyframes, transitions).",
+            "role": "Intégrateur web",
+            "stack": "HTML5, Sass, JavaScript",
+            "formation": "OpenClassrooms - Projet 4"
+        }
     }
 ]

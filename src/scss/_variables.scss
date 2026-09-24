@@ -18,6 +18,7 @@ $bordure-sombre: #262B33;
   --couleur-accent: #{$vermillon};
   --couleur-bordure: #{$bordure-claire};
   --couleur-surface: #ffffff; // fond des cartes
+  --couleur-tag-fond: #F1ECE1;
 }
 
 [data-theme="dark"] {
@@ -28,4 +29,5 @@ $bordure-sombre: #262B33;
   --couleur-accent: #{$vermillon-clair};
   --couleur-bordure: #{$bordure-sombre};
   --couleur-surface: #1B1F26;
+  --couleur-tag-fond: #262B33;
 }

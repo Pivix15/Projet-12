@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import projets from '@/data/projets.json';
 
 const FILTRES = ['Tous', 'React', 'JavaScript', 'Node.js', 'SEO', 'Accessibilité', 'HTML/CSS'];
@@ -34,7 +35,7 @@ const Projets = () => {
 
             <div className="projets__grille">
                 {projetsFiltres.map((projet) => (
-                    <a href={projet.lien} className="card" key={projet.id}>
+                    <Link to={`/projets/${projet.id}`} className="card" key={projet.id}>
                         <div className="card__image">
                             <img src={projet.image} alt="" />
                         </div>
@@ -47,7 +48,7 @@ const Projets = () => {
                                 ))}
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </section>
