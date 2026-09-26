@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import parcours from '@/data/parcours.json';
 import {
     SiHtml5,
@@ -14,20 +15,39 @@ import { ShieldCheck, Search } from 'lucide-react';
 import profile from '@/assets/profile/Profile.webp';
 import { Helmet } from 'react-helmet-async';
 
-const competences = [
-    { nom: 'HTML5', Icon: SiHtml5, couleur: '#E4572E' },
-    { nom: 'CSS3', Icon: FaCss3Alt, couleur: '#2E6FE0' },
-    { nom: 'Sass', Icon: SiSass, couleur: '#CC6699' },
-    { nom: 'JavaScript', Icon: SiJavascript, couleur: '#C9A227' },
-    { nom: 'React', Icon: SiReact, couleur: '#149ECA' },
-    { nom: 'Redux Toolkit', Icon: SiRedux, couleur: '#764ABC' },
-    { nom: 'Accessibilité (RGAA)', Icon: ShieldCheck, couleur: '#2E8B74' },
-    { nom: 'SEO', Icon: Search, couleur: '#4C6FA5' },
-    { nom: 'Git / GitHub', Icon: SiGit, couleur: '#F1502F' },
-    { nom: 'Figma', Icon: SiFigma, couleur: '#A259FF' },
-];
+function APropos() {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stevy Nguyen",
+            "jobTitle": "Intégrateur / Développeur web front-end",
+            "description": "En reconversion vers le développement web, formation intégrateur front-end chez OpenClassrooms (React, accessibilité, SEO, performance).",
+            "knowsAbout": ["HTML5", "CSS3", "Sass", "JavaScript", "React", "Redux Toolkit", "Accessibilité (RGAA)", "SEO", "Git"],
+            "sameAs": [
+                "https://github.com/Pivix15",
+                "https://www.linkedin.com/in/stevy-nguyen-dinh-8b6b83279/"
+            ]
+        });
+        document.head.appendChild(script);
+        return () => document.head.removeChild(script);
+    }, []);
 
-const APropos = () => {
+    const competences = [
+        { nom: 'HTML5', Icon: SiHtml5, couleur: '#E4572E' },
+        { nom: 'CSS3', Icon: FaCss3Alt, couleur: '#2E6FE0' },
+        { nom: 'Sass', Icon: SiSass, couleur: '#CC6699' },
+        { nom: 'JavaScript', Icon: SiJavascript, couleur: '#C9A227' },
+        { nom: 'React', Icon: SiReact, couleur: '#149ECA' },
+        { nom: 'Redux Toolkit', Icon: SiRedux, couleur: '#764ABC' },
+        { nom: 'Accessibilité (RGAA)', Icon: ShieldCheck, couleur: '#2E8B74' },
+        { nom: 'SEO', Icon: Search, couleur: '#4C6FA5' },
+        { nom: 'Git / GitHub', Icon: SiGit, couleur: '#F1502F' },
+        { nom: 'Figma', Icon: SiFigma, couleur: '#A259FF' },
+    ];
+
     return (
         <>
             <Helmet>
@@ -60,7 +80,6 @@ const APropos = () => {
                         </div>
                         <p className='apropos__nom'>Stevy Nguyen</p>
                     </div>
-
                 </div>
 
                 <div className="apropos__bloc">
@@ -98,6 +117,6 @@ const APropos = () => {
             </section>
         </>
     );
-};
+}
 
 export default APropos;
