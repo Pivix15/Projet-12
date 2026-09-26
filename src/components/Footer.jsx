@@ -8,15 +8,15 @@ const Footer = () => {
             <p className="footer__copy">© 2026 Stevy Nguyen</p>
             <div className="footer__socials">
                 <a href="https://github.com/Pivix15" aria-label="Profile Github" className="icon-btn" target="_blank" rel="noreferrer">
-                    <SiGithub size={18} color="currentColor" />
+                    <SiGithub size={18} color="currentColor" aria-hidden="true" />
                 </a>
 
                 <a href="https://www.linkedin.com/in/stevy-nguyen-dinh-8b6b83279/" aria-label="Profile Linkedin" className="icon-btn" target="_blank" rel="noreferrer">
-                    <FaLinkedin size={18} color="currentColor" />
+                    <FaLinkedin size={18} color="currentColor" aria-hidden="true" />
                 </a>
 
                 <a href="mailto:stevynguyen@gmail.com" aria-label="M'envoyer un e-mail" className="icon-btn">
-                    <Mail size={18} strokeWidth={1.8} />
+                    <Mail size={18} strokeWidth={1.8} aria-hidden="true" />
                 </a>
             </div>
         </footer>
