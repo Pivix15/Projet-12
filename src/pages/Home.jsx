@@ -7,7 +7,10 @@ const Home = () => {
                 <div className="hero__content">
                     <p className="hero__eyebrow">Intégrateur web front-end</p>
                     <h1 id="hero-title">Bonjour, je suis <br />Stevy Nguyen</h1>
-                    <p className="hero__text">Passionné de développement web, je transforme des maquettes en interfaces React soignées, accessibles et performantes avec une attention particulière portée aux détails.</p>
+                    <p className="hero__text">
+                        Passionné par le développement web, je conçois des interfaces modernes et accessibles avec React,
+                        en accordant une attention particulière aux détails, aux performances et à l’expérience utilisateur.
+                    </p>
                 </div>
                 <div className="hero__buttons">
                     <Link to="/projets" className="btn btn--primary">Voir mes projets</Link>

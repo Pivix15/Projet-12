@@ -1,17 +1,21 @@
 [
     {
+        "periode": "Avant 2026",
+        "titre": "Un premier parcours dans l'électricité",
+        "texte": "Après une formation et une expérience dans le domaine de l'électricité, j'ai pris le temps de réfléchir à la suite de mon parcours avant de me réorienter vers le développement web, un domaine qui m'attirait depuis longtemps."
+    },
+    {
         "periode": "2026",
         "titre": "Formation Développeur Web - OpenClassrooms",
-        "texte": "Parcours orienté intégration front-end : React, accessibilité, performance et bonnes pratiques SEO, à travers des projets concrets validés en soutenance."
+        "texte": "Formation orientée intégration front-end : React, accessibilité, performance et bonnes pratiques SEO, à travers des projets concrets présentés et validés en soutenance."
     },
     {
-        "periode": "Avant 2026",
-        "titre": "Reconversion professionnelle",
-        "texte": "Décision de se réorienter vers le développement web après une première expérience professionnelle dans un autre domaine."
+        "periode": "La suite",
+        "titre": "À la recherche d'une opportunité",
+        "texte": "Ma formation terminée, je suis actuellement à la recherche d’un premier poste dans le développement web, en tant qu’intégrateur ou développeur front-end."
     },
     {
-        "periode": "Et après",
-        "titre": "Recherche d'un poste d'intégrateur / développeur front-end",
-        "texte": "Ouvert aux opportunités en France comme à l'international."
+        "titre": "Continuer à progresser",
+        "texte": "Je souhaite continuer à développer mes compétences à travers des projets personnels, notamment la création d’un site permettant de consulter et de partager facilement les statistiques d’un serveur Minecraft. À plus long terme, j’aimerais poursuivre une formation en alternance pour approfondir mes compétences en front-end et évoluer progressivement vers le développement full-stack."
     }
 ]

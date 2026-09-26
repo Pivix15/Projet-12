@@ -34,17 +34,21 @@ const APropos = () => {
                     <p className="apropos__eyebrow">À propos</p>
                     <h1>Le développeur derrière l'écran</h1>
                     <p className="apropos__bio">
-                        En reconversion vers le développement web, je me forme chez OpenClassrooms au métier d'intégrateur front-end.
-                        J'aime construire des interfaces claires, accessibles, et fidèles à une maquette sans jamais perdre de vue l'utilisateur final.
+                        En reconversion professionnelle vers le développement web, j’ai suivi une formation chez OpenClassrooms au métier d’intégrateur front-end.
+                        J’aime concevoir des interfaces claires, accessibles et fidèles aux maquettes, tout en gardant l’utilisateur au cœur de mes choix.
                     </p>
                     <div className="apropos__actions">
                         <Link to="/contact" className="btn btn--primary">Me contacter</Link>
                         <Link to="/projets" className="btn btn--secondary">Voir mes projets</Link>
                     </div>
                 </div>
-                <div className="apropos__photo">
-                    <img src={profile} alt="Photo de profil de Stevy Nguyen"/>
+                <div className='apropos__photo-bloc'>
+                    <div className="apropos__photo">
+                        <img src={profile} alt="Photo de profil de Stevy Nguyen" />
+                    </div>
+                    <p className='apropos__nom'>Stevy Nguyen</p>
                 </div>
+
             </div>
 
             <div className="apropos__bloc">
