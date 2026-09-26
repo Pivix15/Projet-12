@@ -30,7 +30,7 @@
             "ceQueJaiAppris": "Une méthodologie de débogage structurée (React DevTools, reproduction du bug, correction, vérification), et la différence entre tests unitaires et tests d'intégration en React.",
             "role": "Développeur front-end / QA",
             "stack": "React, Jest, React Testing Library",
-            "forxmation": "OpenClassrooms - Projet 9"
+            "formation": "OpenClassrooms - Projet 9"
         }
     },
     {
@@ -57,7 +57,7 @@
         "tags": ["SEO", "Accessibilité"],
         "image": "/images/projets/NinaCarducci_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-8",
-        "siteUrl": "#",
+        "siteUrl": "https://nina-carducci.github.io/",
         "detail": {
             "contexte": "Site vitrine existant d'une photographe basée à Bordeaux, à optimiser pour le référencement naturel, l'accessibilité et la performance, sans en changer le contenu ni le design d'origine.",
             "ceQueJaiFait": "Restructuration du HTML en balises sémantiques, optimisation des images (compression, formats adaptés, attributs alt), ajout de données structurées, et corrections d'accessibilité identifiées avec WAVE.",
@@ -91,7 +91,7 @@
         "tags": ["HTML/CSS"],
         "image": "/images/projets/Ohmyfood_desktop.webp",
         "lien": "https://github.com/Pivix15/Projet-4",
-        "siteUrl": "#",
+        "siteUrl": "https://pivix15.github.io/Projet-4/",
         "detail": {
             "contexte": "OhMyfood est un site permettant de réserver un menu dans différents restaurants, à intégrer à partir de maquettes desktop et mobile fournies, en respectant une approche mobile-first.",
             "ceQueJaiFait": "Intégration HTML/SCSS des pages restaurant à partir des maquettes, animations CSS (chargement, ajout au menu), et gestion des différents points de rupture pour un rendu fidèle sur mobile et desktop.",
