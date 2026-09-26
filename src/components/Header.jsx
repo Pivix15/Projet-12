@@ -12,7 +12,7 @@ const Header = () => {
                 <ul>
                     <li><NavLink to="/" aria-label="Retour à la page d'accueil du portfolio" className={({ isActive }) => isActive ? 'n-active' : ''}>Acceuil</NavLink></li>
                     <li><NavLink to="/projets" className={({ isActive }) => isActive ? 'n-active' : ''}>Projets</NavLink></li>
-                    <li><NavLink to="/propos" className={({ isActive }) => isActive ? 'n-active' : ''}>A Propos</NavLink></li>
+                    <li><NavLink to="/propos" className={({ isActive }) => isActive ? 'n-active' : ''}>À Propos</NavLink></li>
                     <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'n-active' : ''}>Contact</NavLink></li>
                 </ul>
             </nav>

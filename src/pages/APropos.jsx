@@ -11,7 +11,8 @@ import {
 } from 'react-icons/si';
 import { FaCss3Alt } from 'react-icons/fa';
 import { ShieldCheck, Search } from 'lucide-react';
-import profile from '@/assets/profile/Profile.webp'
+import profile from '@/assets/profile/Profile.webp';
+import { Helmet } from 'react-helmet-async';
 
 const competences = [
     { nom: 'HTML5', Icon: SiHtml5, couleur: '#E4572E' },
@@ -28,62 +29,74 @@ const competences = [
 
 const APropos = () => {
     return (
-        <section className="apropos">
-            <div className="apropos__intro">
-                <div className="apropos__texte">
-                    <p className="apropos__eyebrow">À propos</p>
-                    <h1>Le développeur derrière l'écran</h1>
-                    <p className="apropos__bio">
-                        En reconversion professionnelle vers le développement web, j’ai suivi une formation chez OpenClassrooms au métier d’intégrateur front-end.
-                        J’aime concevoir des interfaces claires, accessibles et fidèles aux maquettes, tout en gardant l’utilisateur au cœur de mes choix.
-                    </p>
-                    <div className="apropos__actions">
-                        <Link to="/contact" className="btn btn--primary">Me contacter</Link>
-                        <Link to="/projets" className="btn btn--secondary">Voir mes projets</Link>
+        <>
+            <Helmet>
+                <title>À propos - Stevy Nguyen</title>
+                <meta name="description" content="Découvrez mon parcours de reconversion vers le développement web, mes compétences techniques et mon approche en tant qu'intégrateur front-end." />
+                <meta property="og:title" content="À propos - Stevy Nguyen" />
+                <meta property="og:description" content="Découvrez mon parcours de reconversion vers le développement web, mes compétences techniques et mon approche en tant qu'intégrateur front-end." />
+                <meta property="og:url" content="https://pivix15-portfolio.netlify.app/propos" />
+                <meta name="twitter:title" content="À propos - Stevy Nguyen" />
+                <meta name="twitter:description" content="Découvrez mon parcours de reconversion vers le développement web, mes compétences techniques et mon approche en tant qu'intégrateur front-end." />
+            </Helmet>
+
+            <section className="apropos">
+                <div className="apropos__intro">
+                    <div className="apropos__texte">
+                        <p className="apropos__eyebrow">À propos</p>
+                        <h1>Le développeur derrière l'écran</h1>
+                        <p className="apropos__bio">
+                            En reconversion professionnelle vers le développement web, j’ai suivi une formation chez OpenClassrooms au métier d’intégrateur front-end.
+                            J’aime concevoir des interfaces claires, accessibles et fidèles aux maquettes, tout en gardant l’utilisateur au cœur de mes choix.
+                        </p>
+                        <div className="apropos__actions">
+                            <Link to="/contact" className="btn btn--primary">Me contacter</Link>
+                            <Link to="/projets" className="btn btn--secondary">Voir mes projets</Link>
+                        </div>
+                    </div>
+                    <div className='apropos__photo-bloc'>
+                        <div className="apropos__photo">
+                            <img src={profile} alt="Photo de profil de Stevy Nguyen" />
+                        </div>
+                        <p className='apropos__nom'>Stevy Nguyen</p>
+                    </div>
+
+                </div>
+
+                <div className="apropos__bloc">
+                    <h2>Compétences</h2>
+                    <div className="apropos__competences">
+                        {competences.map(({ nom, Icon, couleur }) => (
+                            <div className="skill-card" key={nom}>
+                                <div className="skill-card__icon">
+                                    <Icon size={20} color={couleur} />
+                                </div>
+                                <span className="skill-card__nom">{nom}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className='apropos__photo-bloc'>
-                    <div className="apropos__photo">
-                        <img src={profile} alt="Photo de profil de Stevy Nguyen" />
+
+                <div className="apropos__bloc">
+                    <h2>Parcours</h2>
+                    <div className="timeline">
+                        {parcours.map((etape, index) => (
+                            <div className="timeline__item" key={etape.titre}>
+                                <div className="timeline__marker">
+                                    <span className="timeline__dot" />
+                                    {index !== parcours.length - 1 && <span className="timeline__line" />}
+                                </div>
+                                <div className="timeline__contenu">
+                                    <p className="timeline__periode">{etape.periode}</p>
+                                    <h3>{etape.titre}</h3>
+                                    <p>{etape.texte}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                    <p className='apropos__nom'>Stevy Nguyen</p>
                 </div>
-
-            </div>
-
-            <div className="apropos__bloc">
-                <h2>Compétences</h2>
-                <div className="apropos__competences">
-                    {competences.map(({ nom, Icon, couleur }) => (
-                        <div className="skill-card" key={nom}>
-                            <div className="skill-card__icon">
-                                <Icon size={20} color={couleur} />
-                            </div>
-                            <span className="skill-card__nom">{nom}</span>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <div className="apropos__bloc">
-                <h2>Parcours</h2>
-                <div className="timeline">
-                    {parcours.map((etape, index) => (
-                        <div className="timeline__item" key={etape.titre}>
-                            <div className="timeline__marker">
-                                <span className="timeline__dot" />
-                                {index !== parcours.length - 1 && <span className="timeline__line" />}
-                            </div>
-                            <div className="timeline__contenu">
-                                <p className="timeline__periode">{etape.periode}</p>
-                                <h3>{etape.titre}</h3>
-                                <p>{etape.texte}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

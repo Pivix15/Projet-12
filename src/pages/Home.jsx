@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>Stevy Nguyen - Développeur Front-End</title>
+                <meta name="description" content="Portfolio de Stevy Nguyen, développeur front-end. Découvrez mes projets React, mon parcours et mes compétences en accessibilité et performance web." />
+                <meta property="og:title" content="Stevy Nguyen - Développeur Front-End" />
+                <meta property="og:description" content="Portfolio de Stevy Nguyen, développeur front-end. Découvrez mes projets React, mon parcours et mes compétences en accessibilité et performance web." />
+                <meta property="og:url" content="https://pivix15-portfolio.netlify.app/" />
+                <meta name="twitter:title" content="Stevy Nguyen - Développeur Front-End" />
+                <meta name="twitter:description" content="Portfolio de Stevy Nguyen, développeur front-end. Découvrez mes projets React, mon parcours et mes compétences en accessibilité et performance web." />
+            </Helmet>
+
             <section className="hero">
                 <div className="hero__content">
                     <p className="hero__eyebrow">Intégrateur web front-end</p>

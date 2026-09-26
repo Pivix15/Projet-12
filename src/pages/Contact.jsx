@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Mail, Clock, MapPin } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const encode = (data) => {
     return Object.keys(data)
@@ -34,126 +35,138 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact">
-            <div className="contact__intro">
-                <p className="contact__eyebrow">Contact</p>
-                <h1>Discutons de votre projet</h1>
-                <p className="contact__texte">
-                    Une question, une opportunité, ou juste envie d'échanger ? N'hésitez pas à m'écrire.
-                </p>
-            </div>
+        <>
+            <Helmet>
+                <title>Contact - Stevy Nguyen</title>
+                <meta name="description" content="Contactez Stevy Nguyen, développeur front-end, pour discuter d'une opportunité, d'un projet ou d'une collaboration." />
+                <meta property="og:title" content="Contact - Stevy Nguyen" />
+                <meta property="og:description" content="Contactez Stevy Nguyen, développeur front-end, pour discuter d'une opportunité, d'un projet ou d'une collaboration." />
+                <meta property="og:url" content="https://pivix15-portfolio.netlify.app/contact" />
+                <meta name="twitter:title" content="Contact - Stevy Nguyen" />
+                <meta name="twitter:description" content="Contactez Stevy Nguyen, développeur front-end, pour discuter d'une opportunité, d'un projet ou d'une collaboration." />
+            </Helmet>
 
-            <div className="contact__grille">
-                <form
-                    name="contact"
-                    method="POST"
-                    data-netlify="true"
-                    netlify-honeypot="bot-field"
-                    onSubmit={handleSubmit}
-                    className="contact__form"
-                >
-                    <input type="hidden" name="form-name" value="contact" />
-                    <p className="contact__honeypot">
-                        <label>
-                            Ne pas remplir : <input name="bot-field" onChange={handleChange} />
-                        </label>
+            <section className="contact">
+                <div className="contact__intro">
+                    <p className="contact__eyebrow">Contact</p>
+                    <h1>Discutons de votre projet</h1>
+                    <p className="contact__texte">
+                        Une question, une opportunité, ou juste envie d'échanger ? N'hésitez pas à m'écrire.
                     </p>
+                </div>
 
-                    <div className="contact__row">
+                <div className="contact__grille">
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                        onSubmit={handleSubmit}
+                        className="contact__form"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p className="contact__honeypot">
+                            <label>
+                                Ne pas remplir : <input name="bot-field" onChange={handleChange} />
+                            </label>
+                        </p>
+
+                        <div className="contact__row">
+                            <div className="field">
+                                <label htmlFor="nom">Nom</label>
+                                <input
+                                    id="nom"
+                                    name="nom"
+                                    type="text"
+                                    required
+                                    value={formData.nom}
+                                    onChange={handleChange}
+                                    placeholder="Votre nom"
+                                />
+                            </div>
+                            <div className="field">
+                                <label htmlFor="email">Email</label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    required
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="vous@exemple.com"
+                                />
+                            </div>
+                        </div>
+
                         <div className="field">
-                            <label htmlFor="nom">Nom</label>
+                            <label htmlFor="sujet">Sujet</label>
                             <input
-                                id="nom"
-                                name="nom"
+                                id="sujet"
+                                name="sujet"
                                 type="text"
                                 required
-                                value={formData.nom}
+                                value={formData.sujet}
                                 onChange={handleChange}
-                                placeholder="Votre nom"
+                                placeholder="Objet de votre message"
                             />
                         </div>
+
                         <div className="field">
-                            <label htmlFor="email">Email</label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows={6}
                                 required
-                                value={formData.email}
+                                value={formData.message}
                                 onChange={handleChange}
-                                placeholder="vous@exemple.com"
+                                placeholder="Votre message..."
                             />
                         </div>
-                    </div>
 
-                    <div className="field">
-                        <label htmlFor="sujet">Sujet</label>
-                        <input
-                            id="sujet"
-                            name="sujet"
-                            type="text"
-                            required
-                            value={formData.sujet}
-                            onChange={handleChange}
-                            placeholder="Objet de votre message"
-                        />
-                    </div>
+                        <button type="submit" className="btn btn--primary" disabled={statut === 'envoi'}>
+                            {statut === 'envoi' ? 'Envoi en cours...' : 'Envoyer le message'}
+                        </button>
 
-                    <div className="field">
-                        <label htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows={6}
-                            required
-                            value={formData.message}
-                            onChange={handleChange}
-                            placeholder="Votre message..."
-                        />
-                    </div>
+                        {statut === 'succes' && <p className="contact__feedback contact__feedback--succes">Message envoyé, merci !</p>}
+                        {statut === 'erreur' && <p className="contact__feedback contact__feedback--erreur">Une erreur est survenue, réessayez.</p>}
+                    </form>
 
-                    <button type="submit" className="btn btn--primary" disabled={statut === 'envoi'}>
-                        {statut === 'envoi' ? 'Envoi en cours...' : 'Envoyer le message'}
-                    </button>
-
-                    {statut === 'succes' && <p className="contact__feedback contact__feedback--succes">Message envoyé, merci !</p>}
-                    {statut === 'erreur' && <p className="contact__feedback contact__feedback--erreur">Une erreur est survenue, réessayez.</p>}
-                </form>
-
-                <aside className="info-card">
-                    <div className="info-item">
-                        <div className="info-item__icon"><Mail size={18} /></div>
-                        <div>
-                            <p className="info-label">Email</p>
-                            <p className="info-value">stevynguyen@gmail.com</p>
+                    <aside className="info-card">
+                        <div className="info-item">
+                            <div className="info-item__icon"><Mail size={18} /></div>
+                            <div>
+                                <p className="info-label">Email</p>
+                                <p className="info-value">stevynguyen@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="info-item">
-                        <div className="info-item__icon"><Clock size={18} /></div>
-                        <div>
-                            <p className="info-label">Disponibilité</p>
-                            <p className="info-value">Ouvert aux opportunités</p>
+                        <div className="info-item">
+                            <div className="info-item__icon"><Clock size={18} /></div>
+                            <div>
+                                <p className="info-label">Disponibilité</p>
+                                <p className="info-value">Ouvert aux opportunités</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="info-item">
-                        <div className="info-item__icon"><MapPin size={18} /></div>
-                        <div>
-                            <p className="info-label">Localisation</p>
-                            <p className="info-value">France - mobile à l'international</p>
+                        <div className="info-item">
+                            <div className="info-item__icon"><MapPin size={18} /></div>
+                            <div>
+                                <p className="info-label">Localisation</p>
+                                <p className="info-value">France - mobile à l'international</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="info-card__socials">
-                        <a href="https://github.com/Pivix15" aria-label="Profil GitHub" className="icon-btn" target="_blank" rel="noreferrer">
-                            <SiGithub size={18} />
-                        </a>
-                        <a href="https://linkedin.com/in/ton-profil" aria-label="Profil LinkedIn" className="icon-btn" target="_blank" rel="noreferrer">
-                            <FaLinkedin size={18} />
-                        </a>
-                    </div>
-                </aside>
-            </div>
-        </section>
+                        <div className="info-card__socials">
+                            <a href="https://github.com/Pivix15" aria-label="Profil GitHub" className="icon-btn" target="_blank" rel="noreferrer">
+                                <SiGithub size={18} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/stevy-nguyen-dinh-8b6b83279/" aria-label="Profil LinkedIn" className="icon-btn" target="_blank" rel="noreferrer">
+                                <FaLinkedin size={18} />
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </>
     );
 };
 

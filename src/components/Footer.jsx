@@ -11,7 +11,7 @@ const Footer = () => {
                     <SiGithub size={18} color="currentColor" />
                 </a>
 
-                <a href="https://linkedin.com/in/ton-profil" aria-label="Profile Linkedin" className="icon-btn" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/stevy-nguyen-dinh-8b6b83279/" aria-label="Profile Linkedin" className="icon-btn" target="_blank" rel="noreferrer">
                     <FaLinkedin size={18} color="currentColor" />
                 </a>
 
